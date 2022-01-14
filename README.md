@@ -1,6 +1,6 @@
 # Getting and cleaning data course project
 
-This script merges data files representing fitness data from smartphones to create a tidy dataset for the "Getting and cleaning data" course project.
+This repo contains a script that merges data files representing fitness data from smartphones to create a tidy dataset for the "Getting and cleaning data" course project.
 
 Specifically, the 'run_analysis.R' script does the following:
 
@@ -15,3 +15,5 @@ Specifically, the 'run_analysis.R' script does the following:
 5) From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 The final dataset is saved and submitted as 'tidy_dataset.txt'
+
+A codebook is included to describe the resulting dataset.
