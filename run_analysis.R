@@ -55,7 +55,7 @@ tidy.data<- allData %>% group_by(subject.ID, Activity) %>%
     summarise_at(vars(tBodyAccMeanX:fBodyBodyGyroJerkMagMeanFreq), mean, na.rm=TRUE)
 
 #Save as text file
-write.table(tidy.data, "../tidy_dataset.txt", row.names = TRUE)
+write.table(tidy.data, "../tidy_dataset.txt", row.name = FALSE)
 
 #Saving as .RData retains class of variables
 save(tidy.data, file="../tidy_dataset.RData")
