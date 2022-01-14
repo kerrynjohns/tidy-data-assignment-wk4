@@ -54,4 +54,4 @@ allData<- merge_all %>% mutate(Activity=factor(Activity, levels=activity_labels[
 mean.data<- allData %>% group_by(subject.ID, Activity) %>%
     summarise_at(vars(tBodyAccMeanX:fBodyBodyGyroJerkMagMeanFreq), mean, na.rm=TRUE)
 
-write.table(mean.data, "../tidy_dataset.txt", row.names = FALSE, quote = FALSE)
+write.table(mean.data, "../tidy_dataset.txt", row.names = TRUE)
