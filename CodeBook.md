@@ -20,7 +20,7 @@ The data tidying process included:
 
 ## Fixed Variables
 
-subject.ID - The identification number of the test subject
+subject.ID - The identification number of the test subject  
 Activity - The type of activity measured with 6 tyoes of activity; WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, LAYING, STANDING  
 
 ## Measured variables
