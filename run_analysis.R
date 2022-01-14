@@ -51,7 +51,11 @@ allData<- merge_all %>% mutate(Activity=factor(Activity, levels=activity_labels[
 
 
 #Average of each variable for each subject/activity combination
-mean.data<- allData %>% group_by(subject.ID, Activity) %>%
+tidy.data<- allData %>% group_by(subject.ID, Activity) %>%
     summarise_at(vars(tBodyAccMeanX:fBodyBodyGyroJerkMagMeanFreq), mean, na.rm=TRUE)
 
-write.table(mean.data, "../tidy_dataset.txt", row.names = TRUE)
+#Save as text file
+write.table(tidy.data, "../tidy_dataset.txt", row.names = TRUE)
+
+#Saving as .RData retains class of variables
+save(tidy.data, file="../tidy_dataset.RData")
